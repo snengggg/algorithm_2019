@@ -1,0 +1,78 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+public class Main_ {
+	
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		int M = Integer.parseInt(st.nextToken());
+		int D = Integer.parseInt(st.nextToken());
+		
+		switch(M) {
+		case 12 :
+			D += 31;
+		case 11 :
+			D += 30;
+		case 10 :
+			D += 31;
+		case 9 :
+			D += 30;
+		case 8 :
+			D += 31;
+		case 7 :
+			D += 31;
+		case 6 :
+			D += 30;
+		case 5 :
+			D += 31;
+		case 4 :
+			D += 30;
+		case 3 :
+			D += 31;
+		case 2 :
+			D += 28;
+		case 1 :
+			break;
+		default :
+			break;
+		}
+
+		String str = "";
+		switch(D % 7) {
+		case 1 : 
+			str = "MON";
+			break;
+		case 2 : 
+			str = "TUE";
+			break;
+		case 3 : 
+			str = "WED";
+			break;
+		case 4 : 
+			str = "THU";
+			break;
+		case 5 : 
+			str = "FRI";
+			break;
+		case 6 : 
+			str = "SAT";
+			break;
+		case 0 : 
+			str = "SUN";
+			break;
+		default :
+			break;
+		}
+		
+		System.out.println(str);
+	}
+	
+
+}

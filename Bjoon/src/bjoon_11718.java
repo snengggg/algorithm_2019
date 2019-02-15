@@ -1,0 +1,20 @@
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class bjoon_11718 {
+
+	public static void main(String[] args) throws IOException {
+		
+		Scanner sc = new Scanner(System.in);
+		while(sc.hasNextLine()) {
+			System.out.println(sc.nextLine());
+			
+		}
+		sc.close();
+		
+		
+		
+	}
+
+}
